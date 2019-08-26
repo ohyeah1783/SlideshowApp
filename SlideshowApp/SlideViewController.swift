@@ -8,11 +8,13 @@ class SlideViewController: UIViewController, DetailDelegate{
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var playButton: UIButton!
     
+    // 画像ファイルの要素をそれぞれ作成
     let slide01 = UIImage(named: "slide01.jpg")
     let slide02 = UIImage(named: "slide02.jpg")
     let slide03 = UIImage(named: "slide03.jpg")
     let slide04 = UIImage(named: "slide04.jpg")
     
+    // 画像ファイル４枚をimagesに格納
     fileprivate lazy var images = [slide01, slide02, slide03, slide04]
     fileprivate var nextIndex = 0
     fileprivate var isPlaying = false
